@@ -3,7 +3,7 @@ if(process.env.NODE_ENV != "production"){
   require('dotenv').config();
 }
 
-import express from "express";
+//import express from "express";
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -71,7 +71,8 @@ const sessionOptions = {
 };
 
 app.get("/",(req,res)=>{
-    res.send("hi i am root");
+   // res.send("hi i am root");
+   res.redirect("/listings");
 });
 
 
