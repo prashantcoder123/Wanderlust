@@ -16,14 +16,22 @@ The app is fully deployed on Render, making it accessible online for real-world 
 
  Clone the repository  
    
-git clone https://github.com/your-username/wanderlust.git
+*git clone https://github.com/your-username/wanderlust.git
+
 cd wanderlust
+
 npm install
+
 CLOUDINARY_CLOUD_NAME=your_cloud_name
+
 CLOUDINARY_KEY=your_key
+
 CLOUDINARY_SECRET=your_secret
+
 MONGO_URL=your_mongodb_url
+
 SESSION_SECRET=your_secret
+
 nodemon app.js
 
 
@@ -37,13 +45,16 @@ Deployment on Render without breaking routes
 
 **🤝 Contributing
 Contributions, issues, and feature requests are welcome!
+
 Feel free to fork this repo and submit a pull request.**
 
 
 📩 Contact
 
 👤 Prashant Kumar - 7367055728
+
 📧 Email: prashantkum7676@gmail.com
+
 💼 LinkedIn: https://www.linkedin.com/in/prashant-kumar-16b010261/
 
 
