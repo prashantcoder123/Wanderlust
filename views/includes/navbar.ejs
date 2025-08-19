@@ -17,62 +17,74 @@
     border-radius: 25px;
     padding: 0.5rem 3rem 0.5rem 3rem;
     font-size: 1rem;
-      width: 400px; /* normal size for large screen */
+    width: 400px; /* normal size for large screen */
   }
   .search-container {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center; /* ✅ centers search bar */
-}
-   /* ✅ On small screens: make input smaller */
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; /* ✅ centers search bar */
+  }
+  /* ✅ On small screens: make input smaller */
   @media (max-width: 500px) {
     .search-inp {
-      width: 200px; /* smaller size */
+      width: 150px; /* smaller size */
     }
   }
-.navbar-nav .nav-link {
-  margin-right: 20px; /* reduce gap */
-  margin-left: 0px;     /* remove extra left spacing */
-}
+  .navbar-nav .nav-link {
+    margin-right: 20px; /* reduce gap */
+    margin-left: 0px; /* remove extra left spacing */
+  }
+
+ @media (max-width: 992px) {
+    .navbar-toggler {
+      position: absolute;
+      right: 15px; /* stick to right */
+      top: 50%;    /* vertically center */
+      transform: translateY(-50%);
+    }
+  }
+
+ 
 </style>
 
-<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid position-relative ">
     <!-- Brand -->
     <a class="navbar-brand" href="/listings"
       ><i class="fa-solid fa-compass"></i
     ></a>
 
- <div class="search-container">
-     <form class="d-flex" role="search">
-          <input
-            class="form-control me-2 search-inp"
-            type="search"
-            placeholder="Search destinations"
-          />
-          <button class="btn search-btn" type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>Search
-          </button>
-        </form>
-</div>
+    <div class="search-container">
+      <form class="d-flex" role="search">
+        <input
+          class="form-control me-2 search-inp"
+          type="search"
+          placeholder="Search destinations"
+        />
+        <button class="btn search-btn" type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>Search
+        </button>
+      </form>
+    </div>
+    
     <button
       class="navbar-toggler"
       type="button"
       data-bs-toggle="collapse"
       data-bs-target="#navbarNavAltMarkup"
+      aria-controls="navbarNavAltMarkup" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation"
     >
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav ms-auto ">
+      <div class="navbar-nav ms-auto">
         <a class="nav-link" href="/listings">Explore</a>
       </div>
 
-      
-  
-      
-      <div class="navbar-nav ">
+      <div class="navbar-nav">
         <a class="nav-link ms-auto" href="/listings/new">Airbnb your home</a>
 
         <% if(!currUser) { %>
