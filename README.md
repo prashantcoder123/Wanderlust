@@ -18,7 +18,7 @@ The app is fully deployed on Render, making it accessible online for real-world 
 
  Clone the repository  
    
-*git clone https://github.com/your-username/wanderlust.git
+*git clone [https://github.com/your-username/wanderlust.git](https://github.com/prashantcoder123/Wanderlust)
 
 cd wanderlust
 
