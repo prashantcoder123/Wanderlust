@@ -6,11 +6,13 @@ Media files are uploaded and managed via Cloudinary, ensuring optimized cloud st
 The app is fully deployed on Render, making it accessible online for real-world usage.
 
 🔹 Features: Secure authentication, add/view/edit/delete listings, cloud-based image upload, responsive EJS templates, session handling, and smooth deployment on Render.
+
 🔹 Tech Stack: Node.js, Express.js, MongoDB Atlas, Mongoose, Cloudinary, Passport.js, EJS, MVC Architecture, Render Deployment.
 
 🔹 Live Project: https://wanderlust-5atj.onrender.com/
 
 🔹 Try It Out: https://wanderlust-5atj.onrender.com/signup
+
  → Start exploring immediately after signup 🚀
 
 
@@ -37,9 +39,13 @@ nodemon app.js
 
 📚 Learning Highlights
 Debugging Node.js & Express.js runtime errors
+
 Building scalable apps with MVC structure
+
 Handling sessions & authentication with Passport.js
+
 Using MongoDB Atlas & Cloudinary for cloud-based apps
+
 Deployment on Render without breaking routes
 
 
